@@ -1,0 +1,38 @@
+.hero{
+    min-height: 100vh;
+    background-image:url(../images/pattern-splash.jpg);
+    background-repeat: no-repeat;
+    background-position: cover;
+    color: $color-hero;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.header__contacts{
+    display: flex;
+    flex-direction: column;
+}
+
+.header__contact-items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__nav-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-content__text{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.hero-symbol{
+    width: 50%;
+}
+

@@ -1,0 +1,40 @@
+@font-face {
+    font-family: "TT Norms";
+    font-weight: normal;
+    font-display: swap;
+    src: url(../fonts/TTNorms-Regular.woff2) format(woff2);
+  }
+  
+  @font-face {
+    font-family: "TT Norms";
+    font-weight: 600;
+    font-display: swap;
+    src: url(../fonts/TTNorms-Medium.woff2) format(woff2);
+  }
+  
+  @font-face {
+    font-family: "TT Norms";
+    font-weight: 700;
+    font-display: swap;
+    src: url(../fonts/TTNorms-Bold.woff2) format(woff2);
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  body,
+  html {
+    font-size: 10px;
+    font-family: "TT Norms", sans-serif;
+  }
+  
+  .container{
+      width: 1320px;
+      margin-left: auto;
+      margin-right: auto;
+  }
