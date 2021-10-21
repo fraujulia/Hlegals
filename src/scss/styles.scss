@@ -1,29 +1,69 @@
-$color-hero: white;
-$color-bold: #B3B3BA;
-$color-subtitle: #24A3FF; 
-$color-title: #F0145A;
-$color-main:#686887;
-
-@mixin font-hero-cards {
-  font-size: 1.8rem;
-  line-height: 26/18;
-  color: $color-hero;
+:root{
+  --color-main:#323264;
+  --color-main-alt:#46466E;
+  --color-main-soft:#686887;
+  --color-accent:#F0145A;
+  --color-regular:#24A3FF;
+  --color-regular-hover:#0085FF;
+  --color-regular-active:#006CCF;
+  --color-grey-bg:#F5F5FA;
+  --color-grey-bgAlt:#EDEDF7;
+  --color-grey-text:#B3B3BA;
+  --color-grey-separator:#E6E6F0;
+  --gradient:linear-gradient(128.63deg, #323264 0%, #323264 73.96%, #A54B5F 100%);
+  --gradient-soft:linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+  --gradient-red:linear-gradient(121.42deg, #F0145A 30.65%, #693264 107.33%);
+  --gradient-supersoft:linear-gradient(121.42deg, #F0145A 30.65%, #693264 107.33%);
+  --gradient-accent-text:linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
 }
 
-@mixin font-hero-cards-titles {
-  font-size: 2.4rem;
-  line-height: 29/24;
-  color: $color-subtitle;
-}
-
-@mixin accent-titles {
-  font-weight: 700;
+@mixin text-head {
   font-size: 4.2rem;
-  line-height: 49/42;
-  color: $color-title;
+  line-height: (50 / 42);
 }
 
+@mixin text-title {
+  font-size: 3.2rem;
+  line-height: (38 / 32);
+}
+
+@mixin text-subheader {
+  font-size: 2.4rem;
+  line-height: (28 / 24);
+}
+
+@mixin text-caption {
+  font-size: 1.4rem;
+  line-height: (16 / 14);
+}
+
+@mixin text-small{
+  font-size: 1.8rem;
+  line-height: (26 / 18);
+}
+
+@mixin text-body{
+  font-size: 1.4rem;
+  line-height: (16 / 14);
+}
+
+@mixin text-extra-small{
+  font-size: 1.6rem;
+  line-height: 22 / 16;
+}
+
+@mixin text-extra-small-accent{
+  font-size: 1.8rem;
+  line-height: 21 / 18;
+  color: var(--color-regular);
+}
 
 @import "reset.scss";
 @import "general.scss";
-@import "hero.scss";
+@import "sections/hero.scss";
+@import "sections/services.scss";
+@import "sections/team.scss";
+@import "sections/cases.scss";
+@import "sections/trusted.scss";
+@import "sections/publications.scss";
+@import "sections/more-button.scss";

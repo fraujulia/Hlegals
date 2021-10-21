@@ -1,0 +1,35 @@
+.container__team{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.team{
+    background-color: var(--color-grey-bg);
+    margin-bottom: 77px;
+}
+
+.team__content{
+    padding-top: 40px;
+}
+
+.section-title--selected{
+    color: var(--color-regular);
+    
+}
+
+.team__leader-image{
+    width: 30%;
+    border-radius: 12px 0px 0px 12px;
+}
+
+.team-leader{
+    @include text-small;
+    color: var(--color-grey-text);
+}
+
+.team-position{
+font-size: 1.6rem;
+line-height: 1.38;
+color: var(--color-grey-text);
+}

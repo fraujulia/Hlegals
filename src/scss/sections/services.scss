@@ -1,0 +1,100 @@
+.services{
+    background-image: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    margin-bottom: 40px;
+}
+
+.advantages{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    padding-bottom: 80px;
+}
+
+.advantages__list-item{
+    @include text-head;
+    color: var(--color-grey-text);
+    text-align: right;
+
+}
+
+.advantages__title{
+@include text-title;
+color: white;
+}
+
+.advantages__text{
+font-size: 2.1rem;
+line-height: 1.43;
+color: white;
+}
+
+.advantages__list-link::after{
+    content: "";
+    width: 2px;
+    height: 40px;
+    background-color: white;
+    display: inline-block;
+    }
+
+.advantages__list-link:hover::after{
+    background-color: var(--color-accent);
+}
+
+
+.advantages__list-link:hover{
+    color: var(--color-accent);
+}
+
+.advantages__list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section-title{
+    font-size: 1.4rem;
+    line-height: 1.14;
+    text-transform: lowercase;
+}
+
+.advantages__content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.title-accent {
+    @include text-head;
+    color:var(--color-accent);
+}
+
+.services-title{
+    margin-bottom: 68px;
+}
+
+.services__cards-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding-bottom: 100px;
+}
+.services__cards-image{
+    padding-bottom: 20px;
+   }
+
+.services__cards-title{
+    @include text-subheader;
+    color: var(--color-regular-active);
+    padding-bottom: 15px;
+}
+
+.services__cards-content{
+    @include text-small;
+    color: white;
+}
+
+.services__title{
+    color: white;
+}
+   

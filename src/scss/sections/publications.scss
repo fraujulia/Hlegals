@@ -1,0 +1,51 @@
+.publications{
+    padding-top: 40px;
+    position: relative;
+}
+
+.publications__title{
+    color: var(--color-regular);
+}
+
+.publications__header{
+    padding-bottom: 40px;
+}
+
+.publications__card-text{
+    @include text-extra-small;
+    padding-left: 20px;
+   
+}
+
+.publications__card-text:last-child{
+    padding-bottom: 20px;
+}
+
+.publications__card-heading{
+    @include text-extra-small-accent;
+    padding: 20px 20px 10px 20px;
+}
+
+.publications__card-date{
+    font-size: 1.2rem;
+    line-height: 1.17;
+    color: var(--color-grey-text);
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.publications__card-date::after{
+    content: "";
+    width: 95%;
+    height: 2px;
+    background-color: var(--color-grey-separator);
+    display: block;
+    margin-top: 20px;
+}
+
+.publications__list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+

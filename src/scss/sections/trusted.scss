@@ -1,0 +1,21 @@
+.trusted__heading {
+    text-align: center;
+}
+
+.trusted__list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+}
+
+.trusted__heading{
+    color: var(--color-main);
+    padding-bottom: 30px;
+}
+
+.trusted__heading{
+    @include text-body;
+    color: var(--color-main);
+    text-transform: lowercase;
+}
+

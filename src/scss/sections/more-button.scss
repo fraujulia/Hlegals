@@ -1,0 +1,26 @@
+.more-publications__button{
+    width: 250px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: unset;
+    padding-top: 110px;
+    }
+
+.more-publications{
+    position: absolute;
+    bottom: 0;
+    height: 200px;
+    background: linear-gradient(180deg, rgba(245, 245, 250, 0) 0%, #F5F5FA 86.5%);
+   }
+
+.more-publications__button-link{
+    @include text-body;
+    font-weight: bold;
+    background-color: #458ff6;
+    color: white;
+    padding: 16px 60px;
+    display: inline-block;
+    border-radius: 12px;
+    }
