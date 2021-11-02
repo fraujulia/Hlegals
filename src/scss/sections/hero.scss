@@ -1,15 +1,20 @@
 .hero{
     min-height: 100vh;
-    background-image: url(../../images/main/symbol-long-leg.svg), url(../../images/main/hero-frame.svg), linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+    background-image: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     }
-    
-.header{
+
+.header__container{
     display: flex;
     justify-content: space-between;
+        }
+
+    
+.header{
     padding-top: 50px;
     color: white;
 }
@@ -43,7 +48,11 @@
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
+    gap: 152px;
+    background-image: url(../../images/main/symbol-long-leg.svg), url(../../images/main/hero-frame.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .hero-content__button{
@@ -73,6 +82,14 @@
     font-size: 3.8rem;
     line-height: 1,16;
     color: white;
+    text-align: center;
+}
+
+.hero-content__wraper{
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 138px;
+    
 }
 
 

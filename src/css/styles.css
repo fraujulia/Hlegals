@@ -404,15 +404,18 @@ html {
 
 .hero {
   min-height: 100vh;
-  background-image: url(../../images/main/symbol-long-leg.svg), url(../../images/main/hero-frame.svg), linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+  background-image: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: space-between; }
+
+.header__container {
+  display: flex;
+  justify-content: space-between; }
 
 .header {
-  display: flex;
-  justify-content: space-between;
   padding-top: 50px;
   color: white; }
 
@@ -439,7 +442,11 @@ html {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: flex-end;
+  gap: 152px;
+  background-image: url(../../images/main/symbol-long-leg.svg), url(../../images/main/hero-frame.svg);
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .hero-content__button {
   width: 42px;
@@ -462,7 +469,13 @@ html {
 .hero-content__text {
   font-size: 3.8rem;
   line-height: 1,16;
-  color: white; }
+  color: white;
+  text-align: center; }
+
+.hero-content__wraper {
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 138px; }
 
 .services {
   background-image: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
@@ -768,7 +781,7 @@ html {
 .footer__adress {
   display: flex;
   justify-content: space-between;
-  gap: 30px;
+  gap: 15px;
   padding-bottom: 22px;
   align-items: center; }
 
@@ -780,7 +793,7 @@ html {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 17px; }
+  gap: 10px; }
 
 .comany-adress {
   font-size: 1.6rem;
