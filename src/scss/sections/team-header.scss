@@ -1,17 +1,21 @@
-.hero{
-    min-height: 100vh;
-    background-image: url(../../images/main/symbol-long-leg.svg), url(../../images/main/hero-frame.svg), linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
-    background-repeat: no-repeat;
-    background-position: center;
+
+.about-us-hero-left{
     display: flex;
-    flex-direction: column;
-    }
+    justify-content: flex-start;
+}
+
+.about-us-logo-text{
+    font-size: 3.8rem;
+    line-height: 1.16;
+    color: var(--color-main);
+}
     
-.header{
+.header-about-us{
     display: flex;
     justify-content: space-between;
     padding-top: 50px;
-    color: white;
+    color: var(--color-grey-text);
+    padding-bottom: 40px;
 }
 
 .header__contact-items{
@@ -20,10 +24,14 @@
     align-items: center;
 }
 
-.header__navigation{
-
+.header__navigation-about-us{
     @include text-small;
-    
+    color: var(--color-regular);
+}
+
+.header__nav-link-about-us:hover{
+color: var(--color-accent);
+text-decoration: underline;
 }
 
 .header__nav-item{
@@ -31,7 +39,6 @@
     justify-content: space-between;
     gap: 10px;
 }
-
 
 .hero-content{
     flex-grow: 1;
@@ -74,6 +81,3 @@
     line-height: 1,16;
     color: white;
 }
-
-
-

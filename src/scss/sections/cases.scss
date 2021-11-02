@@ -6,23 +6,19 @@
     gap: 3px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, auto);
-    align-items: end;
+    
        }
 
 .cases__list-item{
     background-color: var(--color-grey-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
 }
 
 .cases__list-item-heading{
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.cases__list-item-company{
-    padding-bottom: 20px;
-    padding-left: 20px;
-
+    margin-bottom: 20px;
 }
 
 .cases__list-item:nth-child(1){

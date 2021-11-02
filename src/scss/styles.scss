@@ -49,13 +49,19 @@
 
 @mixin text-extra-small{
   font-size: 1.6rem;
-  line-height: 22 / 16;
+  line-height: (22 / 16);
 }
 
 @mixin text-extra-small-accent{
   font-size: 1.8rem;
-  line-height: 21 / 18;
-  color: var(--color-regular);
+  line-height: (21 / 18);
+  
+}
+
+@mixin small-ordinary-text {
+  font-size: 2.1rem;
+  line-height: 1.43;
+  color: black;
 }
 
 @import "reset.scss";
@@ -67,3 +73,12 @@
 @import "sections/trusted.scss";
 @import "sections/publications.scss";
 @import "sections/more-button.scss";
+@import "sections/footer.scss";
+@import "sections/about-us-hero.scss";
+@import "sections/about-us-legal-services.scss";
+@import "sections/about-us-team.scss";
+@import "sections/about-us-quality.scss";
+@import "sections/about-us-achievements";
+@import "sections/team-header.scss";
+@import "sections/team-list.scss";
+@import "sections/team-kats.scss";

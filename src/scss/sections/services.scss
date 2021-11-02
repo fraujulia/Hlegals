@@ -1,21 +1,20 @@
 .services{
     background-image: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
     margin-bottom: 40px;
+    padding-top: 80px;
 }
 
 .advantages{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    padding-bottom: 80px;
+padding-bottom: 80px;
 }
 
 .advantages__list-item{
     @include text-head;
     color: var(--color-grey-text);
     text-align: right;
-
-}
+    }
 
 .advantages__title{
 @include text-title;
@@ -28,16 +27,13 @@ line-height: 1.43;
 color: white;
 }
 
-.advantages__list-link::after{
-    content: "";
-    width: 2px;
-    height: 40px;
-    background-color: white;
-    display: inline-block;
+.advantages__list-link{
+border-right: solid; 
+padding-right: 40px;
     }
 
-.advantages__list-link:hover::after{
-    background-color: var(--color-accent);
+.advantages__list-link:hover border-right{
+background-color: var(--color-accent);
 }
 
 
@@ -49,6 +45,7 @@ color: white;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding-right: 40px;
 }
 
 .section-title{
@@ -64,10 +61,6 @@ color: white;
     justify-content: center;
 }
 
-.title-accent {
-    @include text-head;
-    color:var(--color-accent);
-}
 
 .services-title{
     margin-bottom: 68px;

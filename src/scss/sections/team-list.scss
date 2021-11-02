@@ -1,0 +1,29 @@
+.team-list__title{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 80px;
+}
+
+.team-list__members{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding-bottom: 60px;
+}
+
+.team-list__name{
+    @include text-extra-small-accent; 
+    color: var(--color-main);
+    padding-bottom: 5px;
+    padding-top: 20px;
+}
+
+.team-list__position{
+    @include text-extra-small;
+    color: var(--color-grey-text);
+}
+
+.footer{
+    background-color: var(--color-grey-bg);
+}

@@ -1,0 +1,24 @@
+.achievements{
+    padding-top: 28px;
+    padding-bottom: 76px;
+    background-color: var(--color-grey-bg);
+}
+
+.avievements__title{
+    text-transform: lowercase;
+    @include text-body;
+    color: var(--color-main);
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.achievements__pics{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 40px;
+}
+
+.achievements__pics-item{
+    justify-self: center;
+    background-color: white;
+}

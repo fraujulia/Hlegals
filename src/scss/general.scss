@@ -39,6 +39,12 @@
       margin-right: auto;
   }
 
+  .container-small{
+    width: 1095px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .section-title{
     font-size: 1.4rem;
     line-height: 1.14;
@@ -49,5 +55,11 @@
     display: flex;
     justify-content: flex-start;
     gap: 3px;
+}
+
+.title-accent {
+  @include text-head;
+  color:var(--color-accent);
+  font-weight: bold;
 }
     

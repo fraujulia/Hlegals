@@ -1,0 +1,29 @@
+.quality{
+    padding-top: 80px;
+    padding-bottom: 93px;
+}
+
+.about-us-quality-box{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.about-us-quality-box__content{
+    @include small-ordinary-text;
+}
+
+.about-us-quality-box__item:nth-child(1){
+    width: 60%;
+}
+
+.about-us-quality-box__item:nth-child(2){
+    width: 40%;
+}
+
+.about-us-quality-box__item{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
