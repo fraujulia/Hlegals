@@ -11,12 +11,22 @@
 .header__container{
     display: flex;
     justify-content: space-between;
+    @include media-phone{
+        display: block;
+    }
         }
 
     
 .header{
     padding-top: 50px;
     color: white;
+}
+
+.hero__logo-wraper{
+    @include media-phone{
+        text-align: center;
+        padding-bottom: 10px;
+    }
 }
 
 .header__contact-items{
@@ -53,6 +63,11 @@
     background-image: url(../../images/main/symbol-long-leg.svg), url(../../images/main/hero-frame.svg);
     background-repeat: no-repeat;
     background-position: center;
+
+    @include media-phone{
+        background-image: url(../../images/main/symbol-long-leg.svg);
+
+    }
 }
 
 .hero-content__button{
@@ -89,6 +104,7 @@
     text-align: center;
     padding-bottom: 20px;
     padding-top: 138px;
+
     
 }
 

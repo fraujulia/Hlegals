@@ -71,6 +71,9 @@ background-color: var(--color-accent);
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     padding-bottom: 100px;
+    @include media-phone{
+    grid-template-columns: repeat(1, 1fr);
+    }
 }
 .services__cards-image{
     padding-bottom: 20px;

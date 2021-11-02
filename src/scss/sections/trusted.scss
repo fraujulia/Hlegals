@@ -6,6 +6,9 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 0;
+    @include media-phone{
+        grid-template-columns: repeat(2, 1fr);
+            }
 }
 
 .trusted__heading{
@@ -42,34 +45,58 @@
 
 .trusted__list-item:nth-child(5){
     background-color: #FD9339;
+    @include media-phone{
+        order: 7;
+    }
 }
 
 .trusted__list-item:nth-child(6){
     background-color: #E2E2E4;
+    @include media-phone{
+        order: 12;
+    }
 }
 
 .trusted__list-item:nth-child(7){
     background-color: #C71C36;
+    @include media-phone{
+        order: 6;
+    }
 }
 
 .trusted__list-item:nth-child(8){
     background-color: #DCF3F9;
+    @include media-phone{
+        order: 5;
+    }
 }
 
 .trusted__list-item:nth-child(9){
     background-color: #EAEAEA;
+    @include media-phone{
+        order: 8;
+    }
 }
 
 .trusted__list-item:nth-child(10){
     background-color: #282240;
+    @include media-phone{
+        order: 11;
+    }
 }
 
 .trusted__list-item:nth-child(11){
     background-color: #1D4568;
+    @include media-phone{
+        order: 10;
+    }
 }
 
 .trusted__list-item:nth-child(12){
     background-color: #000000;
+    @include media-phone{
+        order: 9;
+    }
 }
 
 

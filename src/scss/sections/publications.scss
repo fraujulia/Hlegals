@@ -11,6 +11,28 @@
     padding-bottom: 40px;
 }
 
+.publications__card:nth-child(1){
+    @include media-phone{
+        display: none;
+        }
+}
+.publications__card:nth-child(3){
+    @include media-phone{
+        display: none;
+        }
+}
+.publications__card:nth-child(5){
+    @include media-phone{
+        display: none;
+        }
+}
+.publications__card:nth-child(6){
+    @include media-phone{
+        display: none;
+        }
+}
+
+
 .publications__card-text{
     @include text-extra-small;
     padding-left: 20px;
@@ -46,6 +68,13 @@
 .publications__list{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    @include media-tablet{
+        grid-template-columns: repeat(2, 1fr);
+        }
+    @include media-phone{
+        grid-template-columns: repeat(1, 1fr);
+        }
+        
 }
 
 

@@ -64,6 +64,18 @@
   color: black;
 }
 
+@mixin media-tablet {
+  @media (max-width: 1300px) {
+    @content;
+  }
+}
+
+@mixin media-phone {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
 @import "reset.scss";
 @import "general.scss";
 @import "sections/hero.scss";

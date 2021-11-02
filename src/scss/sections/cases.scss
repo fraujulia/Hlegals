@@ -6,8 +6,11 @@
     gap: 3px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, auto);
-    
-       }
+        @include media-phone{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: unset;
+            }
+}
 
 .cases__list-item{
     background-color: var(--color-grey-bg);
@@ -24,36 +27,64 @@
 .cases__list-item:nth-child(1){
     grid-column: 1/3;
     grid-row: 1/2;
+    @include media-phone{
+        grid-column: unset;
+        grid-row: unset;
+            }
 }
 
 .cases__list-item:nth-child(2) {
     grid-column: 1/3;
     grid-row: 2/3;
+    @include media-phone{
+        grid-column: unset;
+        grid-row: unset;
+            }
 }
   
 .cases__list-item:nth-child(3) {
     grid-column: 3/5;
     grid-row: 1/3;
+    @include media-phone{
+        grid-column: unset;
+        grid-row: unset;
+            }
         }
   
 .cases__list-item:nth-child(4) {
     grid-column: 5/6;
     grid-row: 1/3;
+    @include media-phone{
+        grid-column: unset;
+        grid-row: unset;
+            }
       }
   
 .cases__list-item:nth-child(5) {
     grid-column: 1/2;
     grid-row: 3/4;
+    @include media-phone{
+        grid-column: unset;
+        grid-row: unset;
+            }
       }
   
 .cases__list-item:nth-child(6) {
     grid-column: 2/4;
     grid-row: 3/4;
+    @include media-phone{
+        grid-column: unset;
+        grid-row: unset;
+            }
   }
   
 .cases__list-item:nth-child(7) {
     grid-column: 4/6;
     grid-row: 3/4;
+    @include media-phone{
+        grid-column: unset;
+        grid-row: unset;
+            }
    }
 
   .cases__list-item--accent{
