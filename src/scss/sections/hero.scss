@@ -16,6 +16,23 @@
     }
         }
 
+.header__address {
+    @include media-phone{
+        display: none;
+    }
+}
+
+.header__facebook-logo{
+    @include media-phone{
+        display: none;
+    }
+}
+
+.header__separator-dot{
+    @include media-phone{
+        display: none;
+    }
+}
     
 .header{
     padding-top: 50px;
@@ -29,17 +46,17 @@
     }
 }
 
+
 .header__contact-items{
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+        }
 
 .header__navigation{
-
     @include text-small;
-    
-}
+    }
+
 
 .header__nav-item{
     display: flex;

@@ -8,17 +8,53 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 padding-bottom: 80px;
+@include media-phone{
+    display: block;
+    }
 }
 
 .advantages__list-item{
     @include text-head;
     color: var(--color-grey-text);
     text-align: right;
+    @include media-phone{
+        text-align: left;
     }
+}
+
+.advantages__list-item:nth-child(1){
+    @include media-phone{
+        color: var(--color-accent);
+        text-transform: uppercase;
+        @include text-caption;
+    }
+}
+
+.advantages__list-item:nth-child(2){
+    @include media-phone{
+        display: none;
+    }
+}
+
+.advantages__list-item:nth-child(3){
+    @include media-phone{
+        display: none;
+    }
+}
+
+.advantages__list-item:nth-child(4){
+    @include media-phone{
+        display: none;
+    }
+}
 
 .advantages__title{
 @include text-title;
 color: white;
+@include media-phone{
+   font-size: 2.2rem;
+   line-height: 1.18;
+}
 }
 
 .advantages__text{
@@ -30,7 +66,10 @@ color: white;
 .advantages__list-link{
 border-right: solid; 
 padding-right: 40px;
+@include media-phone{
+border-right:unset; 
     }
+ }
 
 .advantages__list-link:hover border-right{
 background-color: var(--color-accent);
@@ -64,6 +103,18 @@ background-color: var(--color-accent);
 
 .services-title{
     margin-bottom: 68px;
+    @include media-phone{
+        @include text-title;
+        margin-bottom: 20px;
+    }
+}
+
+.services__image-and-heading{
+    @include media-phone{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
 }
 
 .services__cards-list{
@@ -77,17 +128,26 @@ background-color: var(--color-accent);
 }
 .services__cards-image{
     padding-bottom: 20px;
+    @include media-phone{
+        width: 40px
+    }
    }
 
 .services__cards-title{
     @include text-subheader;
     color: var(--color-regular-active);
     padding-bottom: 15px;
+    @include media-phone{
+        @include text-extra-small-accent;
+    }
 }
 
 .services__cards-content{
     @include text-small;
     color: white;
+    @include media-phone{
+        @include text-extra-small;
+    }
 }
 
 .services__title{

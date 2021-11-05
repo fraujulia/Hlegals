@@ -1,5 +1,10 @@
 .footer{
     padding: 30px 40px;
+    @include media-tablet{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 .footer__adress{
@@ -8,12 +13,18 @@
     gap: 15px;
     padding-bottom: 22px;
     align-items: center;
+    @include media-tablet{
+        display: block;
+           }
 
 }
 
 .footer-contaier{
     display: flex;
     justify-content: space-between;
+    @include media-tablet{
+        display: block;
+           }
 }
 
 .contacts{
@@ -21,6 +32,9 @@
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
+    @include media-tablet{
+        display: block;
+           }
      
 }
 
@@ -53,4 +67,11 @@
     font-size: 1.6rem;
     line-height: 1.13;
     color: var(--color-grey-text);
+    
+}
+
+.dot-separator{
+    @include media-tablet{
+        display: none;
+    }
 }

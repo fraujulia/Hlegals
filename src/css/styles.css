@@ -424,6 +424,18 @@ html {
     .header__container {
       display: block; } }
 
+@media (max-width: 768px) {
+  .header__address {
+    display: none; } }
+
+@media (max-width: 768px) {
+  .header__facebook-logo {
+    display: none; } }
+
+@media (max-width: 768px) {
+  .header__separator-dot {
+    display: none; } }
+
 .header {
   padding-top: 50px;
   color: white; }
@@ -503,17 +515,46 @@ html {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-bottom: 80px; }
+  @media (max-width: 768px) {
+    .advantages {
+      display: block; } }
 
 .advantages__list-item {
   font-size: 4.2rem;
   line-height: 1.19048;
   color: var(--color-grey-text);
   text-align: right; }
+  @media (max-width: 768px) {
+    .advantages__list-item {
+      text-align: left; } }
+
+@media (max-width: 768px) {
+  .advantages__list-item:nth-child(1) {
+    color: var(--color-accent);
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    line-height: 1.14286; } }
+
+@media (max-width: 768px) {
+  .advantages__list-item:nth-child(2) {
+    display: none; } }
+
+@media (max-width: 768px) {
+  .advantages__list-item:nth-child(3) {
+    display: none; } }
+
+@media (max-width: 768px) {
+  .advantages__list-item:nth-child(4) {
+    display: none; } }
 
 .advantages__title {
   font-size: 3.2rem;
   line-height: 1.1875;
   color: white; }
+  @media (max-width: 768px) {
+    .advantages__title {
+      font-size: 2.2rem;
+      line-height: 1.18; } }
 
 .advantages__text {
   font-size: 2.1rem;
@@ -523,6 +564,9 @@ html {
 .advantages__list-link {
   border-right: solid;
   padding-right: 40px; }
+  @media (max-width: 768px) {
+    .advantages__list-link {
+      border-right: unset; } }
 
 .advantages__list-link:hover border-right {
   background-color: var(--color-accent); }
@@ -549,6 +593,17 @@ html {
 
 .services-title {
   margin-bottom: 68px; }
+  @media (max-width: 768px) {
+    .services-title {
+      font-size: 3.2rem;
+      line-height: 1.1875;
+      margin-bottom: 20px; } }
+
+@media (max-width: 768px) {
+  .services__image-and-heading {
+    display: flex;
+    align-items: center;
+    gap: 10px; } }
 
 .services__cards-list {
   display: grid;
@@ -561,17 +616,28 @@ html {
 
 .services__cards-image {
   padding-bottom: 20px; }
+  @media (max-width: 768px) {
+    .services__cards-image {
+      width: 40px; } }
 
 .services__cards-title {
   font-size: 2.4rem;
   line-height: 1.16667;
   color: var(--color-regular-active);
   padding-bottom: 15px; }
+  @media (max-width: 768px) {
+    .services__cards-title {
+      font-size: 1.8rem;
+      line-height: 1.16667; } }
 
 .services__cards-content {
   font-size: 1.8rem;
   line-height: 1.44444;
   color: white; }
+  @media (max-width: 768px) {
+    .services__cards-content {
+      font-size: 1.6rem;
+      line-height: 1.375; } }
 
 .services__title {
   color: white; }
@@ -886,6 +952,11 @@ html {
 
 .footer {
   padding: 30px 40px; }
+  @media (max-width: 1300px) {
+    .footer {
+      display: flex;
+      flex-direction: column;
+      text-align: center; } }
 
 .footer__adress {
   display: flex;
@@ -893,16 +964,25 @@ html {
   gap: 15px;
   padding-bottom: 22px;
   align-items: center; }
+  @media (max-width: 1300px) {
+    .footer__adress {
+      display: block; } }
 
 .footer-contaier {
   display: flex;
   justify-content: space-between; }
+  @media (max-width: 1300px) {
+    .footer-contaier {
+      display: block; } }
 
 .contacts {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 10px; }
+  @media (max-width: 1300px) {
+    .contacts {
+      display: block; } }
 
 .comany-adress {
   font-size: 1.6rem;
@@ -930,6 +1010,10 @@ html {
   line-height: 1.13;
   color: var(--color-grey-text); }
 
+@media (max-width: 1300px) {
+  .dot-separator {
+    display: none; } }
+
 .about-us-hero-left {
   display: flex;
   justify-content: flex-start; }
@@ -945,11 +1029,6 @@ html {
   padding-top: 50px;
   color: var(--color-grey-text);
   padding-bottom: 40px; }
-
-.header__contact-items {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
 
 .header__navigation-about-us {
   font-size: 1.8rem;
@@ -1125,11 +1204,6 @@ html {
   color: var(--color-grey-text);
   padding-bottom: 40px; }
 
-.header__contact-items {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-
 .header__navigation-about-us {
   font-size: 1.8rem;
   line-height: 1.44444;
@@ -1220,11 +1294,6 @@ html {
   padding-top: 50px;
   color: var(--color-grey-text);
   padding-bottom: 40px; }
-
-.header__contact-items {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
 
 .header__navigation-about-us {
   font-size: 1.8rem;

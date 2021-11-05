@@ -18,11 +18,7 @@
     padding-bottom: 40px;
 }
 
-.header__contact-items{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+
 
 .header__navigation-about-us{
     @include text-small;
