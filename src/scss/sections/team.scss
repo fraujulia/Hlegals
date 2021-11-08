@@ -2,25 +2,50 @@
     display: flex;
     justify-content: space-between;
     gap: 40px;
+    @include media-phone{
+        display: block;
+    }
 }
 
 .team{
     background-color: var(--color-grey-bg);
     margin-bottom: 77px;
+    @include media-phone{
+        margin-bottom: 30px;
+    }
 }
 
 .team__content{
     padding-top: 40px;
+    @include media-phone{
+        padding-top: 15px;
+    }
 }
 
 .section-title--selected{
     color: var(--color-regular);
-    
+   }
+
+.team_title{
+    @include media-phone{
+        @include text-title;
+    }
+    @include media-tablet{
+        @include text-title;
+    }
 }
 
 .team__leader-image{
-    width: 30%;
+    width: 413px;
     border-radius: 12px 0px 0px 12px;
+    @include media-tablet{
+        width: 300px;
+    }
+    @include media-phone{
+        width: 60px;
+        height: 60px;
+        border-radius: 120px;
+    }
 }
 
 .team-leader{

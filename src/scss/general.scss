@@ -65,7 +65,8 @@
 
 .title-accent {
   @include text-head;
-  color:var(--color-accent);
   font-weight: bold;
+  color: var(--color-accent);
+ 
 }
     

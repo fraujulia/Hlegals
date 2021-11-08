@@ -94,11 +94,17 @@
   .cases__list-item-heading{
       @include  text-subheader;
       color: var(--color-main-soft);
+      @include media-phone{
+          @include text-extra-small-accent;
+      }
   }
 
   .cases__list-item-company{
       @include text-small;
       color: var(--color-grey-text);
+      @include media-phone{
+          @include text-small;
+      }
   }
 
   

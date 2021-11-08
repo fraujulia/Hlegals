@@ -405,8 +405,8 @@ html {
 .title-accent {
   font-size: 4.2rem;
   line-height: 1.19048;
-  color: var(--color-accent);
-  font-weight: bold; }
+  font-weight: bold;
+  color: var(--color-accent); }
 
 .hero {
   min-height: 100vh;
@@ -646,20 +646,47 @@ html {
   display: flex;
   justify-content: space-between;
   gap: 40px; }
+  @media (max-width: 768px) {
+    .container__team {
+      display: block; } }
 
 .team {
   background-color: var(--color-grey-bg);
   margin-bottom: 77px; }
+  @media (max-width: 768px) {
+    .team {
+      margin-bottom: 30px; } }
 
 .team__content {
   padding-top: 40px; }
+  @media (max-width: 768px) {
+    .team__content {
+      padding-top: 15px; } }
 
 .section-title--selected {
   color: var(--color-regular); }
 
+@media (max-width: 768px) {
+  .team_title {
+    font-size: 3.2rem;
+    line-height: 1.1875; } }
+
+@media (max-width: 1300px) {
+  .team_title {
+    font-size: 3.2rem;
+    line-height: 1.1875; } }
+
 .team__leader-image {
-  width: 30%;
+  width: 413px;
   border-radius: 12px 0px 0px 12px; }
+  @media (max-width: 1300px) {
+    .team__leader-image {
+      width: 300px; } }
+  @media (max-width: 768px) {
+    .team__leader-image {
+      width: 60px;
+      height: 60px;
+      border-radius: 120px; } }
 
 .team-leader {
   font-size: 1.8rem;
@@ -757,11 +784,19 @@ html {
   font-size: 2.4rem;
   line-height: 1.16667;
   color: var(--color-main-soft); }
+  @media (max-width: 768px) {
+    .cases__list-item-heading {
+      font-size: 1.8rem;
+      line-height: 1.16667; } }
 
 .cases__list-item-company {
   font-size: 1.8rem;
   line-height: 1.44444;
   color: var(--color-grey-text); }
+  @media (max-width: 768px) {
+    .cases__list-item-company {
+      font-size: 1.8rem;
+      line-height: 1.44444; } }
 
 .trusted__heading {
   text-align: center; }
@@ -857,6 +892,10 @@ html {
 
 .publications__header {
   padding-bottom: 40px; }
+
+@media (max-width: 1300px) {
+  .publications__card-image {
+    width: 90%; } }
 
 @media (max-width: 768px) {
   .publications__card:nth-child(1) {

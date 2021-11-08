@@ -11,6 +11,12 @@
     padding-bottom: 40px;
 }
 
+.publications__card-image{
+    @include media-tablet{
+        width: 90%;
+    }
+}
+
 .publications__card:nth-child(1){
     @include media-phone{
         display: none;
